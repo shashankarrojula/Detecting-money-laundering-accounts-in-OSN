@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 15, 2018 1:08:49 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.progaurd.entity.User_Service" table="USER_SERVICE">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="sId" type="int" access="field">
+            <column name="SID" />
+        </property>
+        <property name="uId" type="java.lang.String" access="field">
+            <column name="UID" />
+        </property>
+        <property name="startDate" type="java.util.Date">
+            <column name="STARTDATE" />
+        </property>
+        <property name="endDate" type="java.util.Date">
+            <column name="ENDDATE" />
+        </property>
+    </class>
+</hibernate-mapping>

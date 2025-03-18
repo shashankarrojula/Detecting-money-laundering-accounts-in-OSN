@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/progaurd</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="show_sql">true</property>
+  <mapping class="com.voidmain.progaurd.entity.Event" resource="com/voidmain/progaurd/entity/Event.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.Friends" resource="com/voidmain/progaurd/entity/Friends.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.Gift" resource="com/voidmain/progaurd/entity/Gift.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.Service" resource="com/voidmain/progaurd/entity/Service.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.Transaction" resource="com/voidmain/progaurd/entity/Transaction.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.User_Event" resource="com/voidmain/progaurd/entity/User_Event.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.User_Service" resource="com/voidmain/progaurd/entity/User_Service.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.User" resource="com/voidmain/progaurd/entity/User.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.UserLoginHistory" resource="com/voidmain/progaurd/entity/UserLoginHistory.hbm.xml"/>
+  <mapping class="com.voidmain.progaurd.entity.Posts" resource="com/voidmain/progaurd/entity/Posts.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>

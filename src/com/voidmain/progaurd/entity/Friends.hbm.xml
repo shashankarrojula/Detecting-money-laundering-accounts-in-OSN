@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 15, 2018 1:36:27 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.progaurd.entity.Friends" table="FRIENDS">
+        <id name="fid" type="int">
+            <column name="FID" />
+            <generator class="increment" />
+        </id>
+        <property name="requestedFrom" type="java.lang.String">
+            <column name="REQUESTEDFROM" />
+        </property>
+        <property name="requestTo" type="java.lang.String">
+            <column name="REQUESTTO" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>
